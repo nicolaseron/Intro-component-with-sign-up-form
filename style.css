@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffffff;
+  position: relative;
+}
+main {
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: #ff7978;
+  display: flex;
+  height: 85%;
+  width: 76%;
+  padding: 0 5rem;
+}
+.content-txt {
+  text-align: center;
+  margin: auto;
+  width: 35%;
+  text-align: left;
+}
+.content-txt h1 {
+  font-size: 4.9rem;
+  margin-bottom: 3rem;
+  line-height: 5rem;
+}
+.content-txt p {
+  width: 115%;
+  line-height: 3rem;
+}
+.content-form {
+  text-align: center;
+  margin: auto;
+  width: 35%;
+}
+.content-form button:first-child {
+  background-color: #5c54a3;
+  border: 0;
+  width: 100%;
+  color: #ffffffff;
+  padding: 1.7rem 0;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+.txt-important {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.content-form-info {
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: #ffffffff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding-left: 2rem;
+  border: 1px solid #dfdfdf;
+  margin: 1rem 0;
+  height: 5rem;
+  border-radius: 5px;
+}
+form input:focus {
+  outline: 1px solid #000;
+}
+form input::placeholder {
+  font-weight: 800;
+}
+button[type="submit"] {
+  background-color: #37cc8a;
+  color: #ffffffff;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0px -2px 0px 0px #767676 inset;
+}
+.content-form-info p:last-child {
+  color: #b9b8b8;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+  padding: 0 2rem;
+}
+.content-form p:last-child a {
+  color: red;
+  text-decoration: none;
+  font-weight: 700;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+.attribution {
+  font-size: 11px;
+  color: #ffffff;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .content-form,
+  .content-txt {
+    width: 90%;
+    text-align: center;
+  }
+  .content-txt p {
+    width: auto;
+  }
+}
